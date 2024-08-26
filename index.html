@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Map Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Mind Map Generator</h1>
+        <div class="controls">
+            <input type="text" id="nodeContent" placeholder="Enter node content">
+            <button id="addNodeBtn" class="styled-button">Add Node</button>
+            <button id="clearBtn" class="styled-button">Clear Map</button>
+        </div>
+        <div class="controls">
+            <label for="shapeSelect">Choose Shape:</label>
+            <select id="shapeSelect">
+                <option value="rectangle">Rectangle</option>
+                <option value="square">Square</option>
+                <option value="circle">Circle</option>
+                <option value="rhombus">Rhombus</option> <!-- Added rhombus option -->
+            </select>
+        </div>
+        <p>Click on two nodes to connect them with an arrow</p>
+        <div id="mindmapCanvas">
+            <svg id="arrowCanvas"></svg>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9f5ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#app {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h1 {
+    color: #007acc;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    max-width: 400px;
+    margin-bottom: 10px;
+    border: 2px solid #007acc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.styled-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007acc;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.styled-button:hover {
+    background-color: #005f99;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #007acc;
+    font-size: 1rem;
+}
+
+#mindmapCanvas {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border: 2px solid #007acc;
+    background-color: #f0faff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.node {
+    position: absolute;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: move;
+    user-select: none;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Node Shapes */
+.rectangle {
+    background-color: #cf94f9;
+    width: 200px;
+    height: 60px; /* Reduced height */
+    border-radius: 10px;
+}
+
+.square {
+    background-color: #90ee90;
+    width: 100px;
+    height: 100px;
+}
+
+.circle {
+    background-color: #fa9bdc;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.rhombus {
+    background-color: #f0c330;
+    width: 120px;
+    height: 120px;
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+#arrowCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
